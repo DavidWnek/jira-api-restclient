@@ -54,4 +54,14 @@ class OAuth implements AuthenticationInterface
 	{
 		return base64_encode('Bearer ' . $this->bearer);
 	}
+
+    public function getPassword()
+    {
+        return '';
+    }
+
+    public function getId()
+    {
+        return '';
+    }
 }
